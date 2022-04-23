@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Megan De León">
+  <meta name="description" content="Home Web Development for BYU Idaho, WDD230-01">
+  <title>Kaysville Chamber of Commerce</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Delius+Unicase:wght@700&family=Didact+Gothic&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="icon" type="image/png" href="favicon.ico">
+
+  <link href="css/large.css" rel="stylesheet" />
+  <link href="css/medium.css" rel="stylesheet" />
+  <link href="css/small.css" rel="stylesheet" />
+
+  <script defer src="js/lazyload.js"></script>
+</head>
+
+<body>
+  <!-- Navigation using navigation.js -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="city.html">City</a>
+    <a href="directory.html">Directory</a>
+    <a href="contact.html">Contact</a>
+    <a href="joinus.html">Join us</a>
+
+    <p id="contactinfo">
+      Kaysville City, Co.<br><br>
+      📪 200 Main Street, Kaysville, UT <br>
+      💻 kaysville@kcc.com<br>
+      📞 385-212-8520 <br>
+    </p>
+
+    <a href="https://www.instagram.com/">
+      <img src="images/instagram.svg" alt="Instagram camera Icon" width="64" height="64" />
+    </a>
+    <a href="https://www.facebook.com">
+      <img src="images/facebook.svg" alt="Facebook letter F Icon" width="64" height="64" />
+    </a>
+  </div>
+
+  <div id="scoot">
+    <!-- Alert -->
+    <aside class="alerts-banner">
+      <p class="alerts-heading"></p>
+      <p class="alerts-list"></p>
+      <button class="close" id="close">x</button>
+    </aside>
+
+    <div class="title">
+      <a href="index.html"><img src="images/kaysville.svg" alt="Purple mountain logo" width="80" height="80"></a>
+      <h1 class="kaysville">Kaysville.co</h1>
+      <h2 class="subheading">Unite Our Community</h2>
+    </div>
+
+    <span id="opennav" onclick="openNav()">&#9776; Menu</span>
+    <p></p>
+    <div class="row">
+      <div class="column block">
+        <h2>How's the Weather?</h2>
+        <img src="images/smlsunny.jpg" alt="sunny day" width="325" height="225">
+        
+        <!-- currentconditions.js -->
+        <p class="currents"></p>
+      </div>
+
+      <div class="column">
+        <h2>Pipe Plumbing</h2>
+        <p>For All Your Plumbing Needs</p>
+        <a href="https://www.pipedreamsut.com/"><img class="gallerychild" src="images/plumbing.png" width="325"
+            height="325" alt="Pipe Dreams Plumbing logo"></a>
+      </div>
+      <div class="column">
+        
+        <img class="gallerychild" src="images/couple350w.jpg" alt="A picture of a family" width="325" height="430">
+      </div>
+      <div class="column">
+        <a href="https://clytieadams.com/"><img class="gallerychild" src="images/ballet.png" width="325" height="325"
+            alt="Ballerina holding a pose"></a>
+        <h2>Clytie Adams</h2>
+        <p> Ballet Excellence</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="gallerychild" src="images/kiki.jpg" alt="A picture of a family" width="325" height="418"> 
+      </div>
+      <div id="thisweek" class="column block">
+        <h2>This week in Kaysville!</h2>
+        <p id="events">
+          &nbsp;Thursday, July 15, 2021<br> &emsp;Final sign-up for recreational sports<br><br>
+          &nbsp;Saturday, July 17, 2021<br> &emsp;Q&A with City Council<br><br>
+          &nbsp;Wednesday, July 21, 2021<br> &emsp;Meet the 2021 Candidates<br><br>
+          &nbsp;Friday, July 23, 2021<br> &emsp;Pioneer Day Breakfast at Bowman's<br><br>
+          &nbsp;Saturday, July 31, 2021<br> &emsp;Community Play<br><br>
+          &nbsp;Tuesday, August 3, 2021<br> &emsp;Power Commission Meeting
+        </p>
+      </div>
+      <div class="column">
+        <h2>Sweet Cakes</h2>
+        <p>Delicious Gluten-Free Sweets</p>
+        <a href="https://www.sweetcakebakeshop.com/"><img class="gallerychild" src="images/cake.png" width="325"
+            height="311" alt="A fondant harry potter cake"></a>
+      </div>
+      <div class="block column">
+        <!-- Three Day Forecast using threeday.js -->
+        <h2>Forecast</h2>
+        <div class="daily"></div>
+        <img class="gallerychild blossom" src="images/blossom.jpg" alt="Pink blossoms against a light blue sky"
+          width="325" height="230">
+      </div>
+    </div>
+    <div class="join block">
+      <h2>Join us!</h2>
+      <p>Are you ready to jump in and do something? Our purpose is to grow closer together by supporting one another.
+        We strive to create a healthy and a thriving community. <br>We cannot accomplish our goals without you! <br>Click <a id="joinus"
+          href="joinus.html">here</a> to learn more. </p>
+      <ul>
+        <li>We aim to:</li>
+        <li>Connect and empathize with our neighbors </li>
+        <li>Provide resources to those in need</li>
+        <li>Create safe environments for our children</li>
+        <li>Learn and grow</li>
+        <li>Maintain a clean environment</li>
+        <li>Ensure every member feels welcome</li>
+        <li>Empathize with our elderly neighbors</li>
+      </ul>
+         </div>
+
+  </div>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/currentconditions.js"></script>
+  <script src="js/threeday.js"></script>
+
+
+  <footer>
+    <p>
+      &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
+      <a href="https://www.byui.edu/">BYUI Online Learning
+      </a> | <a href="attributions.html">Attributions</a> |
+      <span id="updated"></span>
+    </p>
+  </footer>
+
+  <script src="js/getdate.js"></script>
+</body>
+
+</html>
